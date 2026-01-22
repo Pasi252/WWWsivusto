@@ -1,69 +1,169 @@
-main {
-  background-image: url('https://substackcdn.com/image/fetch/$s_!W24M!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe0f6dc12-d9b1-4760-8f06-5b4582d76371_1280x720.jpeg');
+body {
+  margin: 0;
+  min-height: 100vh;
+
+  background-image: url('https://fivevalleyshampers.com/cdn/shop/articles/tamara-govedarovic-uGT49q3tHbA-unsplash.jpg?v=1762289162&width=1080');
   background-repeat: no-repeat;
-  background-attachment: fixed; 
-  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-size: cover;
 }
-	
-header {
-	background: #C39739;
+main{
+    min-height: calc(100vh - 70px);
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.playfair-display-cool> {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.montserrat-cool {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 .main-navigation {
-	display:flex;
-	align-items:left;
-	justify-content:space-between;
-	padding:20px 20px;
-	
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    text-decoration: none;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+
+    background-color: transparent;
+    background: rgba(56, 55, 55, 0.5);
+    z-index: 100%;
 }
-nav ul{
-	list-style-type:none;
-	margin:0;
-	padding:0;
-	overflow:hidden;
-	position:fixed;
-	top:0;
-	width:100%;
+.brand {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
-nav ul li{
-	float:left;
-	margin:auto;
-	align-content:center;
+.brand-text {
+    font-family: "Playfair Display", serif;
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+    white-space: nowrap;
 }
-nav ul li img{
-	height:50px;
-	width:auto;
-	max-width:100%
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
-nav ul li a {
-	text-decoration:none;
-	display:block;
-	padding: 14px 14px;
-	color:#333;
-	font-size:2em;
-	text-align:center;
-}
+
 .logo img {
-	height:50px;
-	width:auto;
-	max-width:100%
+    height: 50px;
+    width: auto;
 }
+
 .menu {
-	list-style:none;
-	display:flex;
-	gap:0;
-	margin:0;
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
 }
+
 .menu a {
-	text-decoration:none;
-	color:#333;
-	font-weight:500;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #ffffff;
+    font-weight: 400;
 }
-.menu a:hover {
-	color:#001;
+.nav-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.5em;
+    padding: 20px 20px;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
 }
-body {
-  background-image: url('https://substackcdn.com/image/fetch/$s_!W24M!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2Fe0f6dc12-d9b1-4760-8f06-5b4582d76371_1280x720.jpeg');
-  background-repeat: no-repeat;
-  background-attachment: fixed; 
-  background-size: 100% 100%;
+.nav-button:hover {
+    transform: translateY(-2px);
+    color: #fff;
+    background-color: #000000;
+}
+
+.phone {
+    position: absolute;
+    right: 20px;
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+    gap: 8px;
+
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.phone img {
+    height: 30px;
+}
+
+.phone span {
+    white-space: nowrap;
+}
+.homepage{
+    text-align: center;
+}
+
+.homepage h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 4em;
+    color: #fff;
+}
+.homepage h2 {
+    font-size: 1.5em;
+    color: orange;
+}
+.homepage p {
+    font-size: 1.2em;
+    color:#fff;
+}
+.homepage-button {
+    display: inline-block;
+    background-color: transparent;
+    color: white;
+    border-radius: 6px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 18px 40px;
+    border: 2px solid white;
+    width: auto;
+    text-align: center;
+    margin: 0 20px;
+}
+.homepage-button:hover{
+    transform: translateY(-2px);
+    color: #fff;
+    background-color: #c47815;
+    text-decoration: none;
 }
