@@ -1,11 +1,15 @@
 main{
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh);
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     flex-direction: column;
     font-size: 16px;
+}
+body{
+    margin: 0;
+    padding: 0;
 }
 .playfair-display-cool> {
   font-family: "Playfair Display", serif;
@@ -198,7 +202,24 @@ main{
     margin: 0 20px;
     text-shadow: 2px 2px #000000;
 }
-
+.disabledbtn {
+    display: inline;
+    gap: 20px;
+    margin-top: 5px;
+    background-color: transparent;
+    color: white;
+    border-radius: 6px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 18px 40px;
+    border: 2px solid white;
+    width: auto;
+    text-align: center;
+    margin: 0 20px;
+    text-shadow: 2px 2px #000000;
+    cursor: not-allowed;
+}
 .homepage-buttons:hover{
     transform: translateY(-2px);
     color: #fff;
@@ -207,22 +228,36 @@ main{
 }
 
 .HPlower {
-    background: #fff;
+    background-color: #020008;
+    color: #fff;
     padding: 100px 20%;
     min-height: 100vh;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: left;
+    gap: 70px;
+}
+.low-text{
+    flex-direction: column;
+}
+.HPlower h1 {
+    font-size: 3vw;
+    color: #c47815;
+}
+.HPlower p {
+    font-size: 1vw;
+}
+.HPlower img{
+    flex: content;
+    max-height: 70vh;
 }
 
 .footer{
     background-color: #333;
     color: #fff;
     padding: 50px;
-    border-top: 1px solid #ededed;
-    margin-top: 15px;
     text-align: center;
     clear: both;
     float: none;
@@ -247,6 +282,7 @@ main{
 @media (max-width: 800px) {
 
     .homepage {
+        min-height: 80vh;
         width: 100%;
         background-size: 100%;
         display: flex;
@@ -283,6 +319,24 @@ main{
 
     .brand-text {
         font-size: 15px;
+    }
+    .HPlower {
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        gap: 20px;
+    }
+    .HPlower h1 {
+        font-size: 8vw;
+        color: #c47815;
+    }
+    .HPlower p {
+        font-size: 3vw;
+    }
+    .HPlower img{
+        flex: content;
+        max-height: 70vh;
+        width: auto;
     }
 
 }
