@@ -1,5 +1,5 @@
 main{
-    min-height: calc(100vh);
+    min-height: calc(80vh);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -239,22 +239,50 @@ body{
     align-items: left;
     gap: 70px;
 }
-.low-text{
+.low-text {
     flex-direction: column;
 }
 .HPlower h1 {
+    font-family: "Playfair Display", serif;
     font-size: 3vw;
+    color: #ffffff;
+}
+.HPlower h2 {
+    font-size: 1.2vw;
     color: #c47815;
+    letter-spacing: 2px;
 }
 .HPlower p {
     font-size: 1vw;
 }
-.HPlower img{
+.HPlower img {
     flex: content;
     max-height: 70vh;
 }
+.HPlowerer {
+    background-image: url('https://img.freepik.com/free-vector/watercolor-chinese-style-illustration_23-2149751196.jpg?semt=ais_hybrid&w=740&q=80');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: static;
+    width: 100%;
 
-.footer{
+    color: #fff;
+    padding: 100px 20%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+    gap: 70px;
+
+}
+.HPlowerer a {
+    background-color: #020008;
+    font-family: "Playfair Display", serif;
+}
+
+.footer {
     background-color: #333;
     color: #fff;
     padding: 50px;
@@ -279,24 +307,101 @@ body{
     height: 30px;
 }
 
+.aboutus {
+    text-align: center;
+    margin: 0;
+    min-height: 100vh;
+
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5fac753a19904608da14a085/1606268963813-NSC3YINQPJPJ24PCK286/Tacos+%26+Beer+Interior+Vibe?format=2500w');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    position: static;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 20px;
+}
+.AUtext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     
+}
+
+.aboutus h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 4vw;
+    color: #fff;
+    text-shadow: 2px 2px #000000;
+}
+.aboutus h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5vw;
+    color: orange;
+    text-shadow: 2px 2px #000000;
+    
+}
+.AUlower {
+    background-color: #020008;
+    color: #fff;
+    padding: 100px 20%;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+    gap: 70px;
+}
+.AUlower h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 3vw;
+    color: #ffffff;
+}
+.AUlower h2 {
+    font-size: 1.2vw;
+    color: #c47815;
+    letter-spacing: 2px;
+}
+.AUlower p {
+    font-size: 1vw;
+}
+.AUlower img {
+    flex: content;
+    justify-content: center;
+    max-height: 70vh;
+    width: 100vh;
+}
+
 @media (max-width: 800px) {
 
     .homepage {
         min-height: 80vh;
         width: 100%;
-        background-size: 100%;
         display: flex;
         background-size: auto;
     }
-    .homepage h1{
+    .aboutus {
+        min-height: 100vh;
+        width: 100%;
+        background-size: auto;
+        display: flex;
+    }
+    .homepage h1, .aboutus h1{
         font-size: 8vw;
     }
 
-    .homepage h2{
+    .homepage h2, .aboutus h2{
         font-size: 4vw;
     }
 
-    .homepage p{
+    .homepage p, .aboutus p{
         font-size: 3vw;
     }
     
@@ -320,23 +425,32 @@ body{
     .brand-text {
         font-size: 15px;
     }
-    .HPlower {
+    .HPlower,.AUlower {
         flex-direction: column;
         justify-content: center;
-        align-items: left;
+        align-items: center;
         gap: 20px;
     }
-    .HPlower h1 {
+    .HPlower h1, .AUlower h1 {
         font-size: 8vw;
+        
+    }
+    .HPlower h2, .AUlower h2 {
+        font-size: 4vw;
         color: #c47815;
     }
-    .HPlower p {
+    .HPlower p, .AUlower p {
         font-size: 3vw;
     }
     .HPlower img{
         flex: content;
         max-height: 70vh;
         width: auto;
+    }
+    .AUlower img{
+        flex: content;
+        max-height: 40vh;
+        width:auto;
     }
 
 }
