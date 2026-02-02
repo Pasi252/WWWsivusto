@@ -549,3 +549,108 @@ body{
     }
 
 }
+
+
+/*   MENU PASI ALOITUS           */
+
+.menuTeksti {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top:150px;
+
+    background-image: url('https://fivevalleyshampers.com/cdn/shop/articles/tamara-govedarovic-uGT49q3tHbA-unsplash.jpg?v=1762289162&width=1080');
+    
+    
+    
+}
+.row {
+    margin-top: -5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color:rgb(255, 255, 255);
+    padding-bottom: 20px;
+       
+
+}
+
+h1 p {
+    color:#ffffff;
+    font-size: 12px;
+    
+
+}
+
+p {
+    padding-bottom: 20px;
+    
+}
+
+.menu-col {
+    flex-basis: 30%;
+    background-image: linear-gradient(rgba(42, 42, 43, 0.7), rgba(0, 0, 0, 0.7));
+    color:#777;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    margin-top: 5%;
+    
+    transition: 0.5s;
+    
+    
+}
+
+.menu-col img {
+    width: 100%;
+    display: block;
+    max-width: 1200px;
+    max-height: 600px;
+    
+    
+
+}
+
+.h1 img {
+    width: 100%;
+    display: block;
+    max-width: 200px;
+    max-height: 200px;
+    
+    
+
+}
+
+.menu-col:hover {
+    box-shadow: 0 0 20px 0px rgba(255, 255, 255, 0.2);
+}
+
+.menu-btn {
+    display: line-block;
+    text-decoration: none;
+    color: #010002;
+    
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu-btn:hover {
+    display: none;
+  position: absolute;
+  color: #010002;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+}
